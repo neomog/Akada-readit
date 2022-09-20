@@ -1,0 +1,9 @@
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - ia32
+appId: com.example.ElectronAutoUpdate
+publish:
+  provider: github

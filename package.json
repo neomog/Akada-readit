@@ -1,0 +1,58 @@
+{
+  "name": "readit",
+  "version": "1.0.3",
+  "description": "Nathaniel's Electron Test Project",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "watch": "nodemon --exec electron .",
+    "reset": "git reset --hard",
+    "build": "electron-builder -w",
+    "release": "electron-builder -w -p always",
+    "win-cert": "electron-builder create-self-signed-cert -p stackacademytv",
+    "package-mac": "electron-packager . --overwrite --platform=darwin --arch=x64 --icon=assets/icons/mac/icon.icns --prune=true --out=release-builds",
+    "package-win": "electron-packager . electron-tutorial-app --overwrite --asar --platform=win32 --arch=ia32 --icon=build/icon.ico --prune=true --out=release-builds --version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName=\"Electron Tutorial App\"",    
+    "package-linux": "electron-packager . electron-tutorial-app --overwrite --asar=true --platform=linux --arch=x64 --icon=assets/icons/png/1024x1024.png --prune=true --out=release-builds"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/neomog/Akada-Readit-App-Electron.git"
+  },
+  "homepage": "https://github.com/neomog/Akada-Readit-App-Electron.git",
+  "keywords": [
+    "Electron",
+    "Master Electron",
+    "demo"
+  ],
+  "author": "Ohiare Nathaniel",
+  "license": "CC0-1.0",
+  "devDependencies": {
+    "electron": "^9.0.0",
+    "electron-builder": "^23.3.3",
+    "nodemon": "^2.0.0"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8",
+    "electron-updater": "^5.2.1",
+    "electron-window-state": "^5.0.3"
+  },
+  "build": {
+    "appId": "com.stackacademy.readit",
+    "copyright": "Copyright akadallearn.com",
+    "publish": {
+      "provider": "github"
+    },
+    "mac": {
+      "category": "public.app-category.productivity"
+    },
+    "win": {
+      "certificateFile": "private/stackacademytv.pfx",
+      "certificatePassword": "",
+      "verifyUpdateCodeSignature": true,
+      "publisherName": "stackacademytv"
+    },
+    "linux": {
+      "category": "Utility"
+    }
+  }
+}

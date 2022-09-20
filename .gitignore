@@ -1,0 +1,4 @@
+.DS_StoreIniti
+node_modules
+dist
+private

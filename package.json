@@ -48,7 +48,7 @@
     "win": {
       "certificateFile": "private/stackacademytv.pfx",
       "certificatePassword": "",
-      "verifyUpdateCodeSignature": true,
+      "verifyUpdateCodeSignature": false,
       "publisherName": "stackacademytv"
     },
     "linux": {

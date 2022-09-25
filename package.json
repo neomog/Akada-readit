@@ -1,6 +1,6 @@
 {
   "name": "readit",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Nathaniel's Electron Test Project",
   "main": "main.js",
   "scripts": {
@@ -16,9 +16,9 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/neomog/Akada-Readit-App-Electron.git"
+    "url" : "https://github.com/neomog/Akada-readit.git"
   },
-  "homepage": "https://github.com/neomog/Akada-Readit-App-Electron.git",
+  "homepage": "https://github.com/neomog/Akada-readit.git",
   "keywords": [
     "Electron",
     "Master Electron",
